@@ -17,5 +17,10 @@
   "devDependencies": {
     "@types/bun": "latest",
     "typescript": "^5.7.0"
+  },
+  "api2cli": {
+    "app": "context7",
+    "credsEntry": "global/dev/context7",
+    "authType": "bearer"
   }
 }

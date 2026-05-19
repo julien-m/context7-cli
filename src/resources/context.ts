@@ -38,10 +38,9 @@ contextResource
       };
       if (opts.type) params.type = opts.type;
 
-      if (opts.raw && opts.type === "txt") {
-        const url = `/v2/context?${new URLSearchParams(params).toString()}`;
-        const data = await client.get("/v2/context", params);
-        console.log(String(data));
+	if (opts.raw && opts.type === "txt") {
+		const data = await client.get("/v2/context", params);
+		console.log(String(data));
         return;
       }
 
